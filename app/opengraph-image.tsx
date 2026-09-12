@@ -15,102 +15,32 @@ export default function OG() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "72px 80px",
-          fontFamily: "sans-serif",
+          fontFamily: "monospace",
         }}
       >
-        {/* Logo: H+X monogram + wordmark */}
+        {/* Logo: oranžový čtverec s "h" + wordmark */}
         <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
           <div
             style={{
               width: 64,
               height: 64,
               borderRadius: 12,
-              border: "1px solid rgba(255,255,255,0.14)",
+              border: "2px solid #ef590d",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              position: "relative",
+              color: "#ef590d",
+              fontSize: 38,
+              fontWeight: 700,
             }}
           >
-            {/* H */}
-            <div
-              style={{
-                position: "absolute",
-                width: 40,
-                height: 40,
-                display: "flex",
-              }}
-            >
-              <div
-                style={{
-                  width: 3,
-                  height: 40,
-                  background: "#ededed",
-                  position: "absolute",
-                  left: 4,
-                  borderRadius: 2,
-                }}
-              />
-              <div
-                style={{
-                  width: 3,
-                  height: 40,
-                  background: "#ededed",
-                  position: "absolute",
-                  right: 4,
-                  borderRadius: 2,
-                }}
-              />
-              <div
-                style={{
-                  width: 32,
-                  height: 2,
-                  background: "#ededed",
-                  position: "absolute",
-                  top: 19,
-                  left: 4,
-                  opacity: 0.6,
-                }}
-              />
-            </div>
-            {/* X */}
-            <div
-              style={{
-                position: "absolute",
-                width: 44,
-                height: 44,
-              }}
-            >
-              <div
-                style={{
-                  width: 44,
-                  height: 3,
-                  background: "#ef590d",
-                  position: "absolute",
-                  top: 20,
-                  transform: "rotate(45deg)",
-                  borderRadius: 2,
-                }}
-              />
-              <div
-                style={{
-                  width: 44,
-                  height: 3,
-                  background: "#ef590d",
-                  position: "absolute",
-                  top: 20,
-                  transform: "rotate(-45deg)",
-                  borderRadius: 2,
-                }}
-              />
-            </div>
+            h
           </div>
           <span
             style={{
               color: "#ededed",
               fontSize: 36,
               fontWeight: 600,
-              fontFamily: "monospace",
               letterSpacing: -0.5,
             }}
           >
@@ -118,6 +48,7 @@ export default function OG() {
           </span>
         </div>
 
+        {/* Hlavní text */}
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
           <div
             style={{
@@ -125,6 +56,7 @@ export default function OG() {
               fontSize: 24,
               letterSpacing: 4,
               textTransform: "uppercase",
+              display: "flex",
             }}
           >
             IT & vývoj
@@ -136,18 +68,27 @@ export default function OG() {
               fontWeight: 700,
               letterSpacing: -2,
               lineHeight: 1.02,
+              display: "flex",
+              flexDirection: "column",
             }}
           >
-            Od někoho,
-            <br />
-            kdo to zná.
+            <div style={{ display: "flex" }}>Od někoho,</div>
+            <div style={{ display: "flex" }}>kdo to zná.</div>
           </div>
-          <div style={{ color: "#a1a1a8", fontSize: 26, maxWidth: 820 }}>
+          <div
+            style={{
+              color: "#a1a1a8",
+              fontSize: 26,
+              maxWidth: 820,
+              display: "flex",
+            }}
+          >
             Sítě, end-user support, analýza procesů a vývoj. 25 let v IT,
             otevřený pro zajímavé věci.
           </div>
         </div>
 
+        {/* Footer */}
         <div
           style={{
             display: "flex",
