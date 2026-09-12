@@ -225,12 +225,12 @@ export default function Home() {
               </p>
               <div className={styles.contactChannels}>
                 <a
-                  href="mailto:david@hofix.cz"
+                  href="mailto:hofman@hofix.cz"
                   className={styles.contactChannel}
                 >
                   <span className={styles.contactChannelKey}>e-mail</span>
                   <span className={styles.contactChannelVal}>
-                    david@hofix.cz
+                    hofman@hofix.cz
                   </span>
                 </a>
                 <a href="tel:+420" className={styles.contactChannel}>
@@ -245,6 +245,10 @@ export default function Home() {
                     Olomouc & online
                   </span>
                 </div>
+                <div className={styles.contactChannel}>
+                  <span className={styles.contactChannelKey}>IČO</span>
+                  <span className={styles.contactChannelVal}>88150984</span>
+                </div>
               </div>
             </div>
             <aside className={styles.contactAside}>
@@ -256,7 +260,7 @@ export default function Home() {
                   je to proto, že mám něco konkrétního na srdci.
                 </p>
                 <a
-                  href="mailto:david@hofix.cz?subject=Mám%20zájem%20o%20konzultaci"
+                  href="mailto:hofman@hofix.cz?subject=Mám%20zájem%20o%20konzultaci"
                   className={styles.btnPrimary}
                 >
                   Napsat e-mail
@@ -279,9 +283,7 @@ export default function Home() {
           </div>
           <div className={styles.footerMeta}>
             <span>© {new Date().getFullYear()} David Hofman — hofix.cz</span>
-            <span className={styles.footerMetaDim}>
-              IČO na vyžádání · Olomouc, Česká republika
-            </span>
+            <span>IČO 88150984 · Olomouc, Česká republika</span>
           </div>
         </div>
       </footer>
