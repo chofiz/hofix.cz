@@ -23,7 +23,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://hofix.cz"),
   title: {
-    default: "hofix — IT & vývoj bez povinného nasazení",
+    default: "hofix — IT & vývoj bez korporátní omáčky",
     template: "%s — hofix",
   },
   description:
@@ -43,13 +43,13 @@ export const metadata: Metadata = {
     locale: "cs_CZ",
     url: "https://hofix.cz",
     siteName: "hofix",
-    title: "hofix — IT & vývoj bez povinného nasazení",
+    title: "hofix — IT & vývoj bez korporátní omáčky",
     description:
       "IT specialista pro firmy: sítě, end-user support, analýza procesů a vývoj. Zajímavé výzvy rád přijmu.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "hofix — IT & vývoj bez povinného nasazení",
+    title: "hofix — IT & vývoj bez korporátní omáčky",
     description:
       "IT specialista pro firmy: sítě, end-user support, analýza procesů a vývoj.",
   },

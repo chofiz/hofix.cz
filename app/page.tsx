@@ -7,7 +7,7 @@ const PILLARS = [
     no: "01",
     title: "Sítě & end-user support",
     tag: "25 let v IT",
-    body: "Správa firemní sítě, počítačů a periferií. Helpdesk pro lidi, kteří potřebují, aby to fungovalo — ne vysvětlování, proč zrovna teď nefunguje. Stara škola, spolehlivě. Nehraju si na serverového mága, ale vím, co umím a co ne.",
+    body: "Správa firemní sítě, počítačů a periferií. Helpdesk pro lidi, kteří potřebují, aby to fungovalo — ne vysvětlování, proč zrovna teď nefunguje. Stará škola, spolehlivě. Nehraju si na serverového mága, ale vím, co umím a co ne.",
     points: [
       "správa sítě & WiFi",
       "helpdesk & end-user support",
@@ -18,7 +18,7 @@ const PILLARS = [
   {
     no: "02",
     title: "Analýza procesů",
-    tag: "To mě baví",
+    tag: "Procesy",
     body: "Nejvíc mě baví kouknout na to, jak firma reálně funguje, najít zbytečné kroky a ukázat, kde se dá ušetřit čas a nervy. Méně nástrojů, méně klikání, jasnější cesta. Univerzální voják, co vidí souvislosti — a po 25 letech ví, kde se obvykle schovávají problémy.",
     points: [
       "mapování firemních procesů",
@@ -30,8 +30,8 @@ const PILLARS = [
   {
     no: "03",
     title: "Vývoj",
-    tag: "Baví mě to",
-    body: "Programování začalo jako vášeň a zrychle z toho vyrostl samostatný projekt. Baví mě domýšlet věci do detailu a rovnou je stavět — weby, nástroje, automatizace. Vývoj zrychluju s AI asistentem, takže doručuju efektivně bez zbytečných průtahů. Zvládnu vaši výzvu? Napište, řeknu to na rovinu.",
+    tag: "Vášeň",
+    body: "Programování začalo jako vášeň a rychle z toho vyrostl samostatný projekt. Baví mě domýšlet věci do detailu a rovnou je stavět — weby, nástroje, automatizace. Vývoj zrychluju s AI asistentem, takže doručuju efektivně bez zbytečných průtahů. Zvládnu vaši výzvu? Napište, řeknu to na rovinu.",
     points: [
       "weby & webové aplikace",
       "interní nástroje & automatizace",
@@ -127,11 +127,6 @@ export default function Home() {
             <span className={styles.heroStatusItem}>
               <span className={styles.heroStatusKey}>lokalita</span>
               <span className={styles.heroStatusVal}>Olomouc & online</span>
-            </span>
-            <span className={styles.heroStatusSep}>·</span>
-            <span className={styles.heroStatusItem}>
-              <span className={styles.heroStatusKey}>odpověď</span>
-              <span className={styles.heroStatusVal}>do 24 h</span>
             </span>
           </div>
         </div>
@@ -278,7 +273,7 @@ export default function Home() {
           <div className={styles.footerBrand}>
             <Logo className={styles.footerLogo} />
             <p className={styles.footerTag}>
-              IT & vývoj bez povinného nasazení.
+              IT & vývoj bez korporátní omáčky.
             </p>
           </div>
           <div className={styles.footerMeta}>
