@@ -30,8 +30,8 @@ const PILLARS = [
   {
     no: "03",
     title: "Vývoj",
-    tag: "Učím se dál",
-    body: "Programování je pro mě spíš hobby-startup, ale roste to a mám na to vlohy. Domýšlím, jak věci mají vypadat a fungovat, a píšu je — s trochou pomoci AI asistenta, který mě překvapivě baví. Weby, nástroje, automatizace. Zvládnu vaši výzvu? Napište, řeknu to na rovinu.",
+    tag: "Baví mě to",
+    body: "Programování začalo jako vášeň a zrychle z toho vyrostl samostatný projekt. Baví mě domýšlet věci do detailu a rovnou je stavět — weby, nástroje, automatizace. Vývoj zrychluju s AI asistentem, takže doručuju efektivně bez zbytečných průtahů. Zvládnu vaši výzvu? Napište, řeknu to na rovinu.",
     points: [
       "weby & webové aplikace",
       "interní nástroje & automatizace",
@@ -116,17 +116,23 @@ export default function Home() {
             </a>
           </div>
           <div className={styles.heroStatus}>
-            <span className={styles.heroStatusKey}>status</span>
-            <span className={styles.heroStatusVal}>
-              <span className={styles.heroStatusDot} /> otevřený pro zajímavé
-              věci
+            <span className={styles.heroStatusItem}>
+              <span className={styles.heroStatusKey}>status</span>
+              <span className={styles.heroStatusVal}>
+                <span className={styles.heroStatusDot} /> otevřený pro zajímavé
+                věci
+              </span>
             </span>
             <span className={styles.heroStatusSep}>·</span>
-            <span className={styles.heroStatusKey}>lokalita</span>
-            <span className={styles.heroStatusVal}>Olomouc & online</span>
+            <span className={styles.heroStatusItem}>
+              <span className={styles.heroStatusKey}>lokalita</span>
+              <span className={styles.heroStatusVal}>Olomouc & online</span>
+            </span>
             <span className={styles.heroStatusSep}>·</span>
-            <span className={styles.heroStatusKey}>odpověď</span>
-            <span className={styles.heroStatusVal}>do 24 h</span>
+            <span className={styles.heroStatusItem}>
+              <span className={styles.heroStatusKey}>odpověď</span>
+              <span className={styles.heroStatusVal}>do 24 h</span>
+            </span>
           </div>
         </div>
         <div className={styles.heroFade} aria-hidden="true" />
