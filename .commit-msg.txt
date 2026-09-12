@@ -1,8 +1,0 @@
-fix: OG image — display:flex na všech divech (Satori)
-
-ImageResponse (Satori) vyžaduje explicitní display:flex na každém div
-s více dětmi. Zjednodušen monogram na čtverec s "h" + wordmark.
-
-Generated with [Devin](https://devin.ai)
-
-Co-Authored-By: Devin <158243242+devin-ai-integration[bot]@users.noreply.github.com>
