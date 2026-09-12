@@ -64,6 +64,23 @@ const PROCESS = [
   },
 ];
 
+const PROJECTS = [
+  {
+    name: "flipit.cz",
+    url: "https://flipit.cz",
+    tag: "Bazar",
+    desc: "Moderní bazarový systém — čistý design, rychlé vyhledávání, bez zbytečné omáčky. Důkaz, že se dá udělat použitelný web i pro věci, co se dřív řešily vývěsní tabulí.",
+    tech: ["Next.js", "TypeScript", "Postgres"],
+  },
+  {
+    name: "krajzije.cz",
+    url: "https://krajzije.cz",
+    tag: "Akce & kultura",
+    desc: "Hyperlokální agregátor akcí — všech 14 krajů, ~4900 obcí, ~2500 akcí. Scraper pipeline, která sbírá data z obecních webů a RSS, čistí je a staví z nich proklikávatelný web.",
+    tech: ["Next.js", "TypeScript", "Playwright", "Ollama"],
+  },
+];
+
 export default function Home() {
   return (
     <div className={styles.root}>
@@ -76,6 +93,7 @@ export default function Home() {
           <nav className={styles.navLinks}>
             <a href="#co-delam">Co dělám</a>
             <a href="#jak">Jak přemýšlím</a>
+            <a href="#projekty">Projekty</a>
             <a href="#kontakt">Kontakt</a>
           </nav>
           <a href="#kontakt" className={styles.navCta}>
@@ -197,6 +215,51 @@ export default function Home() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* ── PROJEKTY ───────────────────────────────────── */}
+      <section id="projekty" className={`${styles.section} ${styles.sectionAlt}`}>
+        <div className="wrap">
+          <div className={styles.sectionHead}>
+            <span className="mono">/ projekty</span>
+            <h2 className={styles.sectionTitle}>
+              Co jsem postavil.
+            </h2>
+            <p className={styles.sectionLead}>
+              Dva projekty, na kterých vidíte, co umím. Ne slide deck —
+              fungující web, na který se dá kliknout.
+            </p>
+          </div>
+
+          <div className={styles.projects}>
+            {PROJECTS.map((p) => (
+              <a
+                key={p.name}
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.project}
+              >
+                <div className={styles.projectHead}>
+                  <span className={styles.projectName}>{p.name}</span>
+                  <span className={styles.projectTag}>{p.tag}</span>
+                </div>
+                <p className={styles.projectDesc}>{p.desc}</p>
+                <div className={styles.projectTech}>
+                  {p.tech.map((t) => (
+                    <span key={t} className={styles.projectTechItem}>
+                      {t}
+                    </span>
+                  ))}
+                </div>
+                <span className={styles.projectLink}>
+                  {p.url.replace("https://", "")}
+                  <span className={styles.projectArrow}>→</span>
+                </span>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
