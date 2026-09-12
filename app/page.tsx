@@ -80,7 +80,7 @@ export default function Home() {
           </nav>
           <a href="#kontakt" className={styles.navCta}>
             <span className={styles.navCtaDot} />
-            Otevřený na výzvy
+            Otevřený výzvám
           </a>
         </div>
       </header>
@@ -119,8 +119,8 @@ export default function Home() {
             <span className={styles.heroStatusItem}>
               <span className={styles.heroStatusKey}>status</span>
               <span className={styles.heroStatusVal}>
-                <span className={styles.heroStatusDot} /> otevřený pro zajímavé
-                věci
+                <span className={styles.heroStatusDot} /> dostupný pro zajímavé
+                projekty
               </span>
             </span>
             <span className={styles.heroStatusSep}>·</span>
