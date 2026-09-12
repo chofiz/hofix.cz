@@ -69,14 +69,14 @@ const PROJECTS = [
     name: "flipit.cz",
     url: "https://flipit.cz",
     tag: "Bazar",
-    desc: "Moderní bazarový systém — čistý design, rychlé vyhledávání, bez zbytečné omáčky. Důkaz, že se dá udělat použitelný web i pro věci, co se dřív řešily vývěsní tabulí.",
-    tech: ["Next.js", "TypeScript", "Postgres"],
+    desc: "Moderní bazarový systém s AI tagováním inzerátů, přihlášením přes Seznam OAuth a importem z Bazoše na pár kliknutí. Fotky v R2, e-maily přes Resend, realtime přes Supabase.",
+    tech: ["Next.js", "TypeScript", "Supabase", "Gemini AI"],
   },
   {
     name: "krajzije.cz",
     url: "https://krajzije.cz",
     tag: "Akce & kultura",
-    desc: "Hyperlokální agregátor akcí — všech 14 krajů, ~4900 obcí, ~2500 akcí. Scraper pipeline, která sbírá data z obecních webů a RSS, čistí je a staví z nich proklikávatelný web.",
+    desc: "Hyperlokální agregátor kulturních akcí — 14 krajů, ~4900 obcí, ~2500 akcí. Scraper pipeline s Playwright a lokální Ollama (qwen3) sbírá data z obecních webů a RSS, čistí je a staví z nich proklikávatelný web.",
     tech: ["Next.js", "TypeScript", "Playwright", "Ollama"],
   },
 ];
