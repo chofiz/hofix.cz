@@ -69,7 +69,7 @@ const PROJECTS = [
     name: "flipit.cz",
     url: "https://flipit.cz",
     tag: "Bazar",
-    desc: "Moderní bazar — chytré tagování inzerátů a přihlášení přes Seznam. Vše běží rychle a bez zbytečných registrací.",
+    desc: "Český bazar s chytrým hledáním, hodnocením prodejců a AI, která doplní titulek, cenu i kategorii za vás.",
     tech: ["Next.js", "TypeScript", "Supabase", "Gemini AI"],
   },
   {
