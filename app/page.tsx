@@ -69,7 +69,7 @@ const PROJECTS = [
     name: "flipit.cz",
     url: "https://flipit.cz",
     tag: "Bazar",
-    desc: "Český bazar s chytrým hledáním, hodnocením prodejců a AI, která doplní titulek, cenu i kategorii za vás.",
+    desc: "Český bazar, kde inzerát vytvoříš hlasem — řekneš co prodáváš a AI z toho sama vygeneruje celý inzerát včetně ceny a kategorie. Komunikace s protistranou běží přes bezpečný chat, který hlídá podvodníky.",
     tech: ["Next.js", "TypeScript", "Supabase", "Gemini AI"],
   },
   {
